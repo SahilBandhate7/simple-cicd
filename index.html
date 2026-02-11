@@ -1,1 +1,153 @@
-Updated via CI/CD 🔥
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub File View</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: #f6f8fa;
+            margin: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            border-bottom: 1px solid #e1e4e8;
+            background-color: #fcfcfc;
+        }
+        .header img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .header .username {
+            font-weight: 600;
+            margin-right: 5px;
+        }
+        .header .commit-message {
+            color: #24292e;
+        }
+        .header .commit-check {
+            color: #28a745;
+            margin-left: 5px;
+        }
+        .header .commit-details {
+            margin-left: auto;
+            color: #586069;
+            font-size: 12px;
+        }
+        .header .commit-sha {
+            margin-right: 10px;
+        }
+        .header .commit-count {
+            display: flex;
+            align-items: center;
+        }
+        .header .commit-count svg {
+            margin-right: 3px;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .file-list-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            border-top: 1px solid #e1e4e8;
+        }
+        .file-list-item:first-child {
+            border-top: none;
+        }
+        .file-list-item svg {
+            margin-right: 10px;
+            color: #586069;
+        }
+        .file-list-item .file-name {
+            flex-grow: 1;
+            color: #0366d6;
+        }
+        .file-list-item .file-description {
+            color: #24292e;
+            flex-grow: 1;
+        }
+        .file-list-item .file-time {
+            color: #586069;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .section-header {
+            padding: 10px 15px;
+            font-weight: 600;
+            border-bottom: 1px solid #e1e4e8;
+            background-color: #fcfcfc;
+            border-radius: 6px 6px 0 0;
+            margin-bottom: 0;
+        }
+        .readme-container {
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars.githubusercontent.com/u/YOUR_AVATAR_ID?v=4" alt="SahilBandhate7 avatar"> <!-- Replace YOUR_AVATAR_ID -->
+            <span class="username">SahilBandhate7</span>
+            <span class="commit-message">Update index.html</span>
+            <span class="commit-check">✓</span>
+            <div class="commit-details">
+                <span class="commit-sha">3b24b2c</span>
+                <span>11 hours ago</span>
+                <span class="commit-count">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
+                        <path d="M1.643 8.357a7 7 0 1 1 5.928-5.928l.215.215A6.002 6.002 0 0 0 8 14H5v-1h3A5 5 0 1 0 3.03 5.438l-1.387-1.39A2.502 2.502 0 0 0 1.643 8.357ZM8 6.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1H8.5V7a.5.5 0 0 0-.5-.5Z"></path>
+                    </svg>
+                    5 Commits
+                </span>
+            </div>
+        </div>
+        <ul class="file-list">
+            <li class="file-list-item">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill">
+                    <path d="M1.75 1A1.75 1.75 0 0 0 0 2.75v10.5C0 14.214.786 15 1.75 15h12.5A1.75 1.75 0 0 0 16 13.25V4.75A1.75 1.75 0 0 0 14.25 3H7.838a.25.25 0 0 1-.2-.098l-.946-1.183A1.75 1.75 0 0 0 5.25 1H1.75Z"></path>
+                </svg>
+                <span class="file-name">.github/workflows</span>
+                <span class="file-description">Create deploy.yml</span>
+                <span class="file-time" style="width: 130px; text-align: right;">11 hours ago</span>
+            </li>
+            <li class="file-list-item">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file">
+                    <path d="M2.75 1A1.75 1.75 0 0 0 1 2.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0 0 15 13.25v-6.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 1-.75-.75v-3.5A.75.75 0 0 0 9.25 1H2.75ZM13.25 7h-3V3h3v4Z"></path>
+                </svg>
+                <span class="file-name">index.html</span>
+                <span class="file-description">Update index.html</span>
+                <span class="file-time" style="width: 130px; text-align: right;">11 hours ago</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container readme-container">
+        <div class="section-header">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book">
+                <path d="M0 6.75C0 5.402 1.054 4.302 2.378 4.25h11.242c1.328 0 2.38.995 2.38 2.25v7.25c0 1.378-1.42 1.75-2.75 1.75l-9.872.002c-1.33-.001-2.75-.374-2.75-1.75V6.75Zm.75.05c0-.964.778-1.75 1.742-1.75h11.45c.96.002 1.733.81 1.733 1.775v6.988c0 .27-.22.49-.49.49H2.435c-.27 0-.49-.22-.49-.49V6.8ZM2 3.25C2 2.016 3.045 1 4.385 1h7.23C12.964 1 14 2.016 14 3.25a.75.75 0 0 1-1.5 0c0-.4-.403-.75-.885-.75H4.885c-.482 0-.885.35-.885.75a.75.75 0 0 1-1.5 0Z"></path>
+            </svg>
+            README
+        </div>
+        <!-- README content would go here -->
+    </div>
+
+</body>
+</html>
